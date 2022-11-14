@@ -6,7 +6,7 @@ jobs:
       - image: circleci/android:api-28-alpha
     environment:
       JVM_OPTS: -Xmx3200m
-      JAVA_HOME: circleci/openjdk:11
+      JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64/jre
     steps:
       - checkout
       - restore_cache:
